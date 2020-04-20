@@ -9,10 +9,13 @@ def nyc_pigeon_organizer(data)
   i = 0 
   j = 0 
   while i < temp1.length 
-    while j < temp1[i] 
+    while j < temp1[i].length
       !temp2.include? temp1[i][j]
       temp2 << temp1[i][j]
+      
+      j += 1
     end
+    i += 1
   end
   
   pigeon_list_keys = temp2 # keys to pigeon_list
