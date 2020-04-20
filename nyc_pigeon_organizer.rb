@@ -32,7 +32,7 @@ def nyc_pigeon_organizer(data)
       # (2) check if the value contains plk, if yes add the key to dk_value
       original_dk_hash.each do |k, v| 
         if v.include? plk
-          dk_value << v
+          dk_value << k
         end
       end
       
