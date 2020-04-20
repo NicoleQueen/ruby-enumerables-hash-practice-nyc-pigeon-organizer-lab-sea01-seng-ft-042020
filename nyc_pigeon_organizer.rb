@@ -1,6 +1,6 @@
 def nyc_pigeon_organizer(data)
   # write your code here!
-  pigeon_list = {}
+  
   temp1 = [] # temporary values with redandancy
   temp2 = [] # keys to pigeon_list
   data.values.each do |element|
@@ -18,7 +18,7 @@ def nyc_pigeon_organizer(data)
     end
   end
   
-  
+  pigeon_list = {}
   pigeon_list_keys = temp2 # keys to pigeon_list
   data_keys = data.keys # keys to keys to pigeon_list
   
