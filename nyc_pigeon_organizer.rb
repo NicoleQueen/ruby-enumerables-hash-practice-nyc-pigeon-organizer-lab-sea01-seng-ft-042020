@@ -5,18 +5,12 @@ def nyc_pigeon_organizer(data)
   temp2 = [] # keys to pigeon_list
   data.values.each do |element|
     temp1 = element.values
-    p "======"
-    p temp1
-    p "------"
     i = 0 
     while i < temp1.length 
       j = 0 
       while j < temp1[i].length
         if !temp2.include? temp1[i][j]
           temp2 << temp1[i][j]
-          p "*****"
-          p temp2
-          p "*****"
         end
         j += 1
       end
