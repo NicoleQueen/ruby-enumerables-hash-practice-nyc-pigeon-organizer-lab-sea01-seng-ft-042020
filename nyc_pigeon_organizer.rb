@@ -10,9 +10,9 @@ def nyc_pigeon_organizer(data)
   j = 0 
   while i < temp1.length 
     while j < temp1[i].length
-      !temp2.include? temp1[i][j]
-      temp2 << temp1[i][j]
-      
+      if !temp2.include? temp1[i][j]
+        temp2 << temp1[i][j]
+      end
       j += 1
     end
     i += 1
@@ -30,8 +30,9 @@ def nyc_pigeon_organizer(data)
       # (1) iterate over original_dk_hash's key
       # (2) check if the value contains plk, if yes add the key to dk_value
       original_dk_hash.each do |k, v| 
-        v.include? plk
-        dk_value << v
+        if v.include? plk
+          dk_value << v
+        end
       end
       
       plk_hash[dk] = dk_value
