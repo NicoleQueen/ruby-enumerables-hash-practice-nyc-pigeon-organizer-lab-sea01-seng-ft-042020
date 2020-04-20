@@ -19,7 +19,6 @@ def nyc_pigeon_organizer(data)
     end
   end
   
-
   
   pigeon_list_keys = temp2 # keys to pigeon_list
   data_keys = data.keys # keys to keys to pigeon_list
