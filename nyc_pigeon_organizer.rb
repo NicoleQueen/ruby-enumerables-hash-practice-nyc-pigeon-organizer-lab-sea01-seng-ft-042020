@@ -20,6 +20,7 @@ def nyc_pigeon_organizer(data)
   
   pigeon_list = {}
   pigeon_list_keys = temp2 # keys to pigeon_list
+  p pigeon_list_keys
   data_keys = data.keys # keys to keys to pigeon_list
   
   pigeon_list_keys.each do |plk| # e.g., "Lucky"
