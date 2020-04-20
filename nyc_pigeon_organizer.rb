@@ -36,7 +36,7 @@ def nyc_pigeon_organizer(data)
         end
       end
       
-      plk_hash[dk] = dk_value
+    plk_hash[dk] = dk_value
     end
     pigeon_list[plk] = plk_hash
   end  
