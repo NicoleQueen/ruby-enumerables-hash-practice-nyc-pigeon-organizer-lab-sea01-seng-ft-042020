@@ -24,7 +24,7 @@ def nyc_pigeon_organizer(data)
   
   pigeon_list_keys.each do |plk| # e.g., "Lucky"
     plk_hash = {} # {"color": ["purple"], "gender": ["male"], "lives": [Central Park"]}
-    data_keys.each do |dk| # e.g,. "color"
+    data.keys.each do |dk| # e.g,. "color"
       dk_value = []
       # find dk_value
       original_dk_hash = data[dk]
